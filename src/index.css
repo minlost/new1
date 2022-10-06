@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: Arial, Helvetica;
+
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+ /* --- Navbar --- */
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+}
+
+#nav-title {
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease 0s;
+  font-size: 2rem;
+}
+
+/* --- Body -- */
+
+.main-logo {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(24, 24, 24);
+}
+
+.main-logo h1 {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 6rem;
+  margin: 0;
+}
+
+
+.main-logo h2 {
+  position: absolute;
+  top: 100px;
+  left: 140px;
+}
+
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  position: relative;
+}
+
+.logo-container img {
+  margin-top: 10px;
+  width: 30%;
+}
+
+.logo-container img:hover {
+  animation: rotate 1s linear;
+
+}
+
+
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+/* --- Rezervation --- */
+
+.form-container{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(24, 24, 24);
+  flex-direction: column;
+}
